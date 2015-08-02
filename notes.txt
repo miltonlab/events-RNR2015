@@ -1,0 +1,155 @@
+Programación listeraria o Estadística
+==========================================
+
+Un artículo es un flujo de texto y código
+
+Historia
+----------------
+WEB Una primera herramienta para hacer programacion literaria
+la cual 1) Producía código pascal compilable a partir del codigo fuente
+y 2) producía documentación imprimible muy bien formateada usando TeX  
+
+
+# WEB Primera implementación de lo que se conoció como Programación Literaria
+WEB = TANGLE (Pascal) + CWEAVE(Tex) 
+CWEB descendiente de WEB
+CWEB = CTANGLE (C) + CWEAVE(Tex)
+
+Como se procesan los programas en Programación Literaria?
+---------------------------------------------------------
+- Cada "trozo" de código" carga datos y calcula resultados
+- El código de presentación formatea los resultados (tablas, figuras, imágenes, video, etc.
+
+Por eso la idea originaria y central es:
+"Programas literarios pueden ser tejidos (weaved) para producir documentos legibles para los humanos y enredados (tangled) para producir documentos legibles para las máquinas"
+
+En general el concepto de programación reproducible es un paradigma que requiere:
+1.) Un lenguaje de documentación (human readable)
+2.) Un lenguaje de programación  (machine readable)
+
+Varios ejemplos de entornos:
+------------------------------
+Sweave = Latex + R
+
+
+Ejemplos actuales y populares de implementación:
+----------------------------------
+*Jypyter = HTML + Python
+Jupyter anteriormente IPython usa HTML o Markdown como lenguaje para documentacion y provee la posibilidad de usar Python o Julia como lenguajes primarios para escribir codigo fuente, permitiendo ademas hacer "binding" hacia otros lenguajes de programacion tales como R, Ruby, Shell entre otros.
+Puede exportar a PDF, HTML, Latex o reveal.js
+Creado por Fernando Pérez
+Un ejemplo mio:
+*Un screenshot
+https://github.com/miltonlab/researchlab/blob/master/ticec2014/IPyNBtut.ipynb
+
+*knitr = HTML(o LateX o Markdown) + R 
+Es una alternativa (paquete) más reciente que trata de unir muchas características orientadas a mitigar las limitaciones de sweave.
+Fue desarrollado por Yihui Xie mientras realizaba su trabajo de graduación
+Puede exportar a PDF, HTML o Word
+Integrable con el IDE Rstudio
+*Un screenshot
+Un ejemplo mio: 
+https://github.com/miltonlab/RepData_PeerAssessment1/blob/master/PA1_template.Rmd
+PENDIENTE ejemplo en codigo R puro mezclado con markdown
+
+Pero que es Markdown
+-----------------------
+- Una versión simplificada de los lenguajes de marcado
+- Simple y permite un formateo intuitivo de los elementos
+- No necesita de editores especiales
+- Tan simple como un escribir un txt y tan vistozo como lo que genera un HTML
+DEMOS 
+-----
+1) Rstudio Pendiente estudiar
+2) IPyhton notebook
+
+REPRODUCIBLE RESEARCH
+
+Que es la Investigación Reproducible
+-------------------------------------
+Buscar concepto en internet ????
+Hace los datos analíticos y el código disponibles para que otros puedan reproducir los descubrimientos
+
+Por qué necesitamos Investigación Reproducible?
+------------------------------------------------
+Las nuevas tecnologías incrementan las colecciones de datos cada vez 
+Los datos son más complejos y extremadamente multidimensionales
+Las bases de datos existentes pueden ser mezcladas dentro de "mega bases de datos"
+La capacidad de cómputo es altamente incrementable permitiendo análisis mas sofisticados
+Para cada campo "X" existe un campo "Computacional X"
+
+
+Cuales son los actores?
+-----------------------------
+Autores
+  Desean hacer su investigación reproducible
+  Quieren herramientas para IR y hacer su vida más facil o al manos no muy dura
+  Tomar considerable esfuerzo para colocar sus datos o resultados en la web, pueden no tener recursos tales como un servidor web
+  Entonces => Con IR colocan solo lo mínimo en la Web así como materiales suplementarios en las revistas o en bases de datos centrales
+
+Lectores
+  Quieren reproducir y eventualmente expandir los descubrimientos interesantes
+  Quieren herramientas para IR para hacer su vida más fácil
+  Deben descargar datos y resultados individualmente y juntar las piezas: que datos van con qué secciones de codigo?
+  Pueden no tener los mismos recursos que los autores
+  Entonces => Solo descargan los datos y analizan, juntan las piezas de software y ejecutan
+
+
+
+
+Como puedo hacer mi trabajo reproducible?
+----------------------------------------
+Guardar el rastro de las cosas ???
+
+
+Estructura del Análisis de Datos
+---------------------------------
+
+Definir la pregunta
+Definir el dataset ideal
+Determinar que datos se pueden acceder
+Obtener los datos
+Limpiar los datos
+Análisis de Datos exploratorio
+Modelamiento/predicción estadístico
+Interpretar los resultados
+Mejorar los resultados **
+Escribir/sintetizar los resultados
+Crear código reproducible
+
+
+
+Elementos del Análisis de datos
+--------------------------------------
+Datos:
+  Datos crudos (raw)
+  Datos procesados
+Figuras:
+  Figuras exploratorias
+  Figuras finales
+Código:
+  Scripts borrador/no usados
+  Scripts finales (R, Julia, Python ...)
+  Scripts Literarios 
+    Archivos .rmd (R markdown)
+    Archivos .ipynb (Jupyter/IPython notebooks)
+Texto:
+  Archivo de ayuda (README)
+  Texto del análisis/reporte (pdf, html) generado comunmente por  herramientas de programación literaria
+
+
+Estructura de un documento o reporte de análisis ????
+---------------------------------------
+Titulo
+Introducción/motivación
+Metodos (estadísticos)
+Resultados
+Conclusiones
+
+
+CONCLUSIONES
+================
+* La Programación Estadística Literaria puede ser una manera muy útil para colocar: texto, código, datos y salida todo en un documento.
+* La Investigación Reproducible es importante como un estándar mínimo particularmente para estudios que son difíciles de replicar.
+* Es necesaria una infraestructura para la creación y distribución de documentos reproducibles más allá de lo actualmente disponible.
+* Existe un creciente número de herramientas para la creación de documentos reproducibles.
