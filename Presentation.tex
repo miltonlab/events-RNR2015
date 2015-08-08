@@ -87,112 +87,247 @@ Computer programs should be written in a combination of the programming language
 
 \begin{frame}
 \frametitle{Historia}
-\begin{block}{Enfoque}
+
+\begin{block}{WEB}
 \begin{columns}
-\column{.1\textwidth} \hspace{0.7cm}
+%\column{.1\textwidth} %\hspace{0.7cm}
 % % %\includegraphics[width=1.8cm]{imagenes/latex.png} 
 \column{.8\textwidth}
 \justifying
-El enfoque de la programación Literaria es contrario al de la programación tradicional: En vez de escribir código que contiene documentación el programador literario escribe documentación que contiene código.
+Primera herramienta de implementación de lo que se conoció como Programación Literaria. Producía código PACAL compilable y la documentación formateada usando Tex
+\end{columns}
+\end{block}
+
+\begin{block}{CWEB}
+\begin{columns}
+%\column{.1\textwidth} %\hspace{0.7cm}
+% % %\includegraphics[width=1.8cm]{imagenes/latex.png} 
+\column{.8\textwidth}
+\justifying
+Descendiente del entorno WEB usa en cambio C como lenguaje de programación pero el mismo Tex para la generación de la documentación
 \end{columns}
 \end{block}
 \end{frame}
 
-\subsection{?`Qué es  \LaTeX ?}
+\subsection{?`Qué es la Programación Literaria o Estadística?}
 \begin{frame}
-  \frametitle{?`Qué es  \LaTeX ?}
+  \frametitle{?`Qué es la Programación Literaria ?}
 \begin{itemize}
 \justifying
-\item LaTeX es un sistema de preparación de documentos de alta calidad especialmente diseñado para la producción de documentos científicos y técnicos, aunque puede utilizarse para casi para cualquier tipo de publicación. Está disponible para casi todas las plataformas existentes, y sus archivos se pueden intercambiar con facilidad entre ellas. 
+\item Paradigma cotrario a la programación tradicional: En vez de escribir código que contiene documentación el programador literario escribe documentación que contiene código. 
 \bigskip
-\item La combinación de alta calidad de los resultados, gratuidad, disponibilidad y compatibilidad ha contribuido a su amplia difusión,  especialmente entre la comunidad científica convirtiéndose en estándar para la elaboración, comunicación y publicación de documentos científicos.
+\item Los Programas literarios pueden ser tejidos (WEAVED) para producir documentos legibles para los humanos y enredados (TANGLED) para producir documentos legibles para las máquinas"
+
 \end{itemize}
 \end{frame}
 
-\subsection{?`Por qué utilizar \LaTeX ?}
+\subsection{Elementos de la Programación Literaria}
 \begin{frame}
-  \frametitle{?`Por qué utilizar \LaTeX ?}
+  \frametitle{Elementos de la Programación Literaria}
 \begin{itemize}
 \justifying
-\item \LaTeX  distribuye  el texto de manera adecuada, dando al conjunto una apariencia elegante similar a la de un libro.\pause
-\item Los procesadores de texto no trabajan muy bien con fórmulas, en cambio LATEX hace este proceso a la perfección.\pause
-\item \LaTeX es una potente herramienta para la escritura de documentos  complejos como libros o artículos científicos.\pause
-\item El diseño lógico con que trabaja \LaTeX, permite una composición detallada  del documento
+\item Cada "trozo" de código fuente carga datos y calcula resultados mientras que el código de presentación formatea los resultados (tablas, figuras, imágenes, video, etc.\pause
+\bigskip
+ \item De los conceptos anotados se desprende que este paradigma requiera: \pause
+\begin{enumerate}
+\item Un lenguaje de documentación (human readable) \pause
+\item Un lenguaje de programación (machine readable) \pause
+\end{enumerate}
 \end{itemize}
 \end{frame}
 
-\section{Distribuciones}
+\subsection{Ejemplos de implementaciones o entornos}
 \begin{frame}
-\frametitle {Distribuciones \TeX}
-\justifying
-Una distribución integra todo lo necesario para que funcione  \TeX y \LaTeX sobre un sistema operativo. Contiene el núcleo principal del programa, paquetes y extensiones adicionales.
-
-\begin{block}{Linux}
+  \frametitle{Ejemplos de implementaciones o entornos}
 \begin{itemize}
 \justifying
-\item \textbf{Distribución:} \textcolor{brown}{\textbf{TeXLive}} version actual 2011\\
-\item Proporciona un sistema integral de TeX con los binarios para la mayoría de las variantes de Unix, como GNU / Linux, y también de Windows. 
-Incluye los programas relacionados con \TeX, paquetes macro, y las fuentes que son software libre, incluyendo soporte para varios idiomas\\
-\item \textbf{Enlace de Descarga:}\\
-Manualmente\hfill \textcolor{blue}{\url{http://www.tug.org/texlive/}}\\
-Internet\hfill sudo apt-get install texlive-full \\
-\hfill sudo apt-get install texlive
+\item Sweave = Latex + R
+\bigskip
+\item  kintr = HTML + R
+\bigskip
+\item IPython Notebook = HTML + Python
 \end{itemize}
+\end{frame}
+
+
+\section{Investigación Reproducible}
+\subsection{Por qué y para qué la necesitamos?}
+\begin{frame}
+\frametitle {Investigación Reproducible}
+\justifying
+\begin{block}{?`Que persigue?}
+\LARGE Hacer los \textbf{datos analíticos} y el \textbf{código} disponibles para que otros puedan reproducir los descubrimientos
 \end{block}
 \end{frame}
 
 
 \begin{frame}
-\frametitle{Distribuciones \TeX }
-
-\begin{block}{Windows}
+\frametitle{?`Por qué necesitamos Investigación Reproducible?}
+\begin{block}{... hoy más que nunca}
 \begin{itemize}
 \justifying
-\item \textbf{Distribución: } \textcolor{brown}{\textbf{MikTeX}} version actual 2.9
-\item Actualización automática, MikTeX descarga nuevas versiones de componentes y paquetes instalados previamente. Su código es abierto.
-Posee convertidores para generar archivos PostScript (.ps), .pdf, .html,etc.
-\item \textbf{Enlace de Descarga: }\textcolor{blue}{\url{http://www.miktex.org/2.9/setup}}
+\item Las nuevas tecnologías incrementan las colecciones de datos cada vez más
+\item Los datos son más complejos y extremadamente multidimensionales
+\item Las bases de datos existentes pueden ser mezcladas dentro de "mega bases de datos"
+\item La capacidad de cómputo es altamente incrementable permitiendo análisis mas sofisticados
+\item Para cada campo 'X' existe un campo "Computacional 'X'
+
+\end{itemize}
+\end{block}
+\end{frame}
+
+\subsection{El Análisis de Datos}
+\begin{frame}
+\frametitle{El Análisis de Datos }
+\justifying
+\begin{block}{Su estructura}
+\begin{itemize}
+\item Definir la pregunta
+\item Definir el dataset ideal
+\item Determinar que datos se pueden acceder
+\item Obtener los datos
+\item Limpiar los datos
+\item Análisis de Datos exploratorio
+\item Modelamiento/predicción estadístico
+\item Interpretar los resultados
+%\item Mejorar los resultados
+\item Escribir/sintetizar los resultados
+\item Crear código reproducible
 \end{itemize}
 \end{block}
 \end{frame}
 
 \begin{frame}
-\frametitle{Distribuciones \TeX }
+\frametitle{El flujo tipico de la investigación }
 \justifying
-\begin{block}{Mac OS}
+\begin{block}{}
+\includegraphics {imagenes/research_flow.png}  
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Los actores en el Análisis de Datos}
+\justifying
+\begin{block}{Autores} 
 \begin{itemize}
-\item \textbf{Distribución: } \textcolor{brown}{\textbf{ MacTeX}} version actual 2011
-\item Es una redistribución de TeXLive que está dedicado exclusivamente para utilidades Mac. MacTeX es empaquetado y distribuido por el grupo de trabajo MacTeX TeXnical.
-\item \textbf{Enlace de Descarga: }\textcolor{blue}{\url{ http://www.tug.org/mactex/2011/ }}
+  \item Desean hacer su investigación reproducible
+  \item Quieren herramientas de IR que hagan su vida más facil ("no muy dura")
+  \item Relizan considerables esfuerzos para publicar su datos. E: servidor web
+  \item Entonces => Con IR colocan solo lo mínimo en la Web así como materiales suplementarios en las revistas o en bases de datos centrales
+\end{itemize}
+\end{block}
+\begin{block}{Lectores} 
+\begin{itemize}
+  \item Quieren reproducir y posiblemente expandir los descubrimientos de interés
+  \item Quieren herramientas de IR para hacer su vida más fácil ("no muy dura")
+  \item Deben descargar datos y juntar las piezas: que datos va con qué codigo?
+  %\item Pueden no tener los mismos recursos que los autores
+  \item Entonces => Descargan los datos y analizan, juntan el software y ejecutan
 \end{itemize}
 \end{block}
 \end{frame}
 
-\section{Editores \LaTeX}
+\subsection{Análisis de Datos + Programación Literaria}
 \begin{frame}
-\frametitle {Editores \LaTeX}
+\frametitle{Elementos del Análisis de Datos }
 \justifying
+\begin{block}{}
+\begin{itemize}
+\item Datos
+  \begin{itemize}
+  \item Datos crudos (raw)
+  \item Datos procesados
+  \end{itemize}
+\item Figuras
+\begin{itemize}
+  \item Figuras exploratorias
+  \item Figuras finales
+\end{itemize}
+\item Código
+\begin{itemize}
+  \item Scripts borrador/no usados
+  \item Scripts finales (R, Julia, Python ...)
+  \item Scripts Literarios 
+\begin{itemize}
+    \item Archivos .rmd (R markdown)
+    \item Archivos .ipynb (Jupyter/IPython notebooks)
+\end{itemize}    
+\end{itemize}
+\item Texto:
+\begin{itemize}
+  \item Archivo de ayuda (README)
+  \item Texto del análisis/reporte (pdf, html) generado comunmente por  herramientas de programación literaria
+ \end{itemize}
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Estructura mínima de un reporte de Análisis de Datos}
+\justifying
+\begin{block}{}
+\begin{itemize}
+\item \Large Titulo
+\item \Large Introducción/motivación
+\item \Large Metodos (estadísticos)
+\item \Large Resultados
+\item \Large Conclusiones
+\end{itemize}
+\end{block}
+\end{frame}
 
 
-\begin{block}{TeXMaker}
+\section{Software Libre}
+\begin{frame}
+\frametitle {Entronos y herramientas popularizados}
+\justifying
+\begin{block}{IPython Notebook}
 \begin{columns}
 \column{.1\textwidth} \hspace{0.7cm}
 \includegraphics[width=1.8cm]{imagenes/texmaker.png} 
 \column{.8\textwidth}
 \begin{itemize}
 \justifying
-\item Versión 3.3.3  abril 2012
-\item Editor gratuito y multiplataforma. Liberado bajo la licencia GPL
-\item Integración de las herramientas necesarias para desarrollar documentos con LaTeX, en una sola aplicación. 
+\item Creado por Fernando Perez (estudiante español de ingeniería aeronáutica)
+\item Es un entorno completo de computación interactiva en entorno web
+\item HTML o Markdown + Python o Julia
+\item Permite hacer binding hacia otros lenguajes de programación tales como: R, ruby, shell, entre otros.
+\item Puede exportar los documentos resultantes hacia: PDF, HTML, Latex o reveal.js 
 \item Incluye soporte Unicode, revisión ortográfica, plegado de código y un visor de pdf y modo de visualización continua.
-\item \textbf{Enlace de Descarga:}\textcolor{blue}{\url{http://www.xm1math.net/texmaker/}}
 \end{itemize}
 \end{columns}
 \end{block}
-\justifying
-\textbf{Opciones:} Kile(Linux),WinShell(windows),Smultron,Scribo,TeXworks, Fraise,Latexian.
 \end{frame}
 
+\begin{frame}
+\frametitle {Entronos y herramientas popularizados}
+\justifying
+\begin{block}{knitr + RStudio}
+\begin{columns}
+\column{.1\textwidth} \hspace{0.7cm}
+\includegraphics[width=1.8cm]{imagenes/texmaker.png} 
+\column{.8\textwidth}
+\begin{itemize}
+\justifying
+\item \textbf{knitr} desarrollado por Yihui Xie mientras realizaba su trabajo de graduación
+\item Es una librería escrita en R
+\item HTML(o LateX o Markdown) + R 
+\item Sus caracteristicas están orientadas a mitigar las limitaciones de SWEAVE.
+\item Puede exportar a PDF, HTML o Word
+\item \textbf{knitr} es integrable con el IDE \textbf{Rstudio}
+\end{itemize}
+\end{columns}
+\end{block}
+\end{frame}
+
+
+\section{Demos}
+\begin{frame}
+\frametitle {}
+\centering \Huge Demos
+\end{frame}
+
+%++++++++++++++++++++++++++
 
 \begin{frame}
 \frametitle {Editores \LaTeX \hspace{0.1cm}  con Interfaz Gráfica}

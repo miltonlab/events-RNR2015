@@ -31,6 +31,8 @@ Varios ejemplos de entornos:
 ------------------------------
 Sweave = Latex + R
 
+SOFTWARE LIBRE
+===============
 
 Ejemplos actuales y populares de implementación:
 ----------------------------------
@@ -62,6 +64,9 @@ DEMOS
 -----
 1) Rstudio Pendiente estudiar
 2) IPyhton notebook
+
+Git + Github
+------------------
 
 REPRODUCIBLE RESEARCH
 
@@ -117,7 +122,7 @@ Mejorar los resultados **
 Escribir/sintetizar los resultados
 Crear código reproducible
 
-
+arreglar tamaño de imagen **
 
 Elementos del Análisis de datos
 --------------------------------------
