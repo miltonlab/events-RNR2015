@@ -27,6 +27,8 @@
 \usepackage{url}% para escribir una URL
 \usepackage{ragged2e}
 
+\usepackage{listings}
+
 \begin{document}
 \title[\LaTeX]{\textbf{\Huge Programación Literaria Investigación Reproducible y Software Libre}}  
 \author[Ing. Milton Labanda, Mg.]{Ing. Milton Labanda, Mg.}
@@ -76,7 +78,7 @@
 \begin{block}{El objetivo}
 \begin{columns}
 \column{.1\textwidth} \hspace{0.7cm}
-%\includegraphics[height=1.5cm]{imagenes/images.png} 
+\includegraphics[height=1.5cm]{imagenes/book.png} 
 \column{.8\textwidth}
 \justifying
 Computer programs should be written in a combination of the programming language (the usual source code) and the natural language, which explains the logic of the program. \textbf{\textit{Donald Knuth}}
@@ -126,7 +128,8 @@ Descendiente del entorno WEB usa en cambio C como lenguaje de programación pero
   \frametitle{Elementos de la Programación Literaria}
 \begin{itemize}
 \justifying
-\item Cada "trozo" de código fuente carga datos y calcula resultados mientras que el código de presentación formatea los resultados (tablas, figuras, imágenes, video, etc.\pause
+\item Cada "trozo" de código fuente carga datos y calcula resultados mientras que el código de presentación
+\item IPython Notebook = HTML + Python formatea los resultados (tablas, figuras, imágenes, video, etc.\pause
 \bigskip
  \item De los conceptos anotados se desprende que este paradigma requiera: \pause
 \begin{enumerate}
@@ -143,10 +146,35 @@ Descendiente del entorno WEB usa en cambio C como lenguaje de programación pero
 \justifying
 \item Sweave = Latex + R
 \bigskip
-\item  kintr = HTML + R
+\item  knitr = HTML + R
 \bigskip
-\item IPython Notebook = HTML + Python
+\item  jupyter = HTML + Python
+\bigskip
 \end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Ejemplo knitr}
+%\begin{block}{}
+\begin{columns}
+\column{.4\textwidth} \hspace{1cm}
+\includegraphics[scale=0.3]{imagenes/rmd_input.png} 
+\column{.4\textwidth}
+\includegraphics[scale=0.24]{imagenes/rmd_output.png} 
+\end{columns}
+%\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Ejemplo Jupyter (IPython Notebook)}
+%\begin{block}{}
+\begin{columns}
+\column{.4\textwidth} \hspace{1cm}
+\includegraphics[scale=0.3]{imagenes/rmd_input.png} 
+\column{.4\textwidth}
+\includegraphics[scale=0.24]{imagenes/rmd_output.png} 
+\end{columns}
+%\end{block}
 \end{frame}
 
 
@@ -284,7 +312,7 @@ Descendiente del entorno WEB usa en cambio C como lenguaje de programación pero
 \begin{block}{IPython Notebook}
 \begin{columns}
 \column{.1\textwidth} \hspace{0.7cm}
-\includegraphics[width=1.8cm]{imagenes/texmaker.png} 
+\includegraphics[width=2.2cm]{imagenes/jupyter.png} 
 \column{.8\textwidth}
 \begin{itemize}
 \justifying
@@ -305,7 +333,7 @@ Descendiente del entorno WEB usa en cambio C como lenguaje de programación pero
 \begin{block}{knitr + RStudio}
 \begin{columns}
 \column{.1\textwidth} \hspace{0.7cm}
-\includegraphics[width=1.8cm]{imagenes/texmaker.png} 
+\includegraphics[width=2.3cm]{imagenes/knitr.png} 
 \column{.8\textwidth}
 \begin{itemize}
 \justifying
@@ -536,3 +564,4 @@ Carrera de Ingeniería en Sistemas\\
 \end{frame}
 
 \end{document}
+\textbf{}
