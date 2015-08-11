@@ -30,7 +30,7 @@
 \usepackage{listings}
 
 \begin{document}
-\title[\LaTeX]{\textbf{\Huge Programación Literaria Investigación Reproducible y Software Libre}}  
+\title[UIDE - IEEE - RNR2015]{\textbf{\Huge Programación Literaria Investigación Reproducible y Software Libre}}  
 \author[Ing. Milton Labanda, Mg.]{Ing. Milton Labanda, Mg.}
 \institute[UIDE Informática]{Carrera de Ingeniería Informática y Multimedia\\ Universidad Internacional del Ecuador}
 
@@ -39,8 +39,6 @@
 
 %marco para el pie en el titulo
 \begin{frame}
-%\includegraphics[height=0.2\textheight]{imagenes/escudoUNL.png} 
-%\hfill \includegraphics[height=0.2\textheight]{imagenes/logoSIS.png}
 \hfill {Reunión Nacional de Ramas IEEE RNR2015}
 \titlepage
 \begin{center}
@@ -56,10 +54,6 @@
 \tableofcontents [currentsection]
 \end{frame}}
 
-%\logo{\includegraphics[[width=0.7\paperwidth, height=0.7\paperheight]{imagenes/cis} }
-%\setbeamertemplate{background canvas} {\includegraphics[width=\paperwidth,height=\paperheight]{imagenes/cis}}
-
-
 
 \section{Programación Literaria}
 \subsection{Historia}
@@ -71,7 +65,7 @@
 \includegraphics[width=1.8cm]{imagenes/donald.jpg}
 \column{.8\textwidth}
 \justifying
-"I believe that the time is ripe for significantly better documentation of programs, and that we can best achieve this by considering programs to be works of literature. Hence, my title: "Literate Programming" \textbf{\textit{Donald Knuth}}
+"Computer programs should be written in a combination of the programming language (the usual source code) and the natural language, which explains the logic of the program". \textbf{\textit{Donald Knuth}}
 \end{columns}
 \end{block}
 
@@ -81,7 +75,7 @@
 \includegraphics[height=1.5cm]{imagenes/book.png} 
 \column{.8\textwidth}
 \justifying
-Computer programs should be written in a combination of the programming language (the usual source code) and the natural language, which explains the logic of the program. \textbf{\textit{Donald Knuth}}
+I believe that the time is ripe for significantly better documentation of programs, and that we can best achieve this by considering programs to be works of literature. Hence, my title: "Literate Programming" \textbf{\textit{Donald Knuth}}
 \end{columns}
 \end{block}
 
@@ -128,13 +122,12 @@ Descendiente del entorno WEB usa en cambio C como lenguaje de programación pero
   \frametitle{Elementos de la Programación Literaria}
 \begin{itemize}
 \justifying
-\item Cada "trozo" de código fuente carga datos y calcula resultados mientras que el código de presentación
-\item IPython Notebook = HTML + Python formatea los resultados (tablas, figuras, imágenes, video, etc.\pause
+\item Cada "trozo" de código fuente carga datos y calcula resultados mientras que el código de presentación formatea la salida
 \bigskip
- \item De los conceptos anotados se desprende que este paradigma requiera: \pause
+ \item Consecuentemente el paradigma de la programación literaria requiere: 
 \begin{enumerate}
-\item Un lenguaje de documentación (human readable) \pause
-\item Un lenguaje de programación (machine readable) \pause
+\item Un lenguaje de documentación (human readable)
+\item Un lenguaje de programación (machine readable)
 \end{enumerate}
 \end{itemize}
 \end{frame}
@@ -144,12 +137,15 @@ Descendiente del entorno WEB usa en cambio C como lenguaje de programación pero
   \frametitle{Ejemplos de implementaciones o entornos}
 \begin{itemize}
 \justifying
-\item Sweave = Latex + R
+\item Sweave = \LaTeX + R
 \bigskip
 \item  knitr = HTML + R
 \bigskip
-\item  jupyter = HTML + Python
+\item  Jupyter = HTML + Python
 \bigskip
+\item  Rambutan = \TeX + Java
+\bigskip
+\item  CoffeScript (Markdown + CoffeScript)
 \end{itemize}
 \end{frame}
 
@@ -158,7 +154,7 @@ Descendiente del entorno WEB usa en cambio C como lenguaje de programación pero
 %\begin{block}{}
 \begin{columns}
 \column{.4\textwidth} \hspace{1cm}
-\includegraphics[scale=0.3]{imagenes/rmd_input.png} 
+\includegraphics[scale=0.3]{imagenes/rmd_input.png}
 \column{.4\textwidth}
 \includegraphics[scale=0.24]{imagenes/rmd_output.png} 
 \end{columns}
@@ -168,12 +164,7 @@ Descendiente del entorno WEB usa en cambio C como lenguaje de programación pero
 \begin{frame}
 \frametitle{Ejemplo Jupyter (IPython Notebook)}
 %\begin{block}{}
-\begin{columns}
-\column{.4\textwidth} \hspace{1cm}
-\includegraphics[scale=0.3]{imagenes/rmd_input.png} 
-\column{.4\textwidth}
-\includegraphics[scale=0.24]{imagenes/rmd_output.png} 
-\end{columns}
+\includegraphics[scale=0.3]{imagenes/pynb.png} 
 %\end{block}
 \end{frame}
 
@@ -307,28 +298,28 @@ Descendiente del entorno WEB usa en cambio C como lenguaje de programación pero
 
 \section{Software Libre}
 \begin{frame}
-\frametitle {Entronos y herramientas popularizados}
+\frametitle {Entronos y herramientas modernas}
 \justifying
-\begin{block}{IPython Notebook}
+\begin{block}{Jupyter(IPython Notebook)}
 \begin{columns}
 \column{.1\textwidth} \hspace{0.7cm}
 \includegraphics[width=2.2cm]{imagenes/jupyter.png} 
 \column{.8\textwidth}
 \begin{itemize}
 \justifying
-\item Creado por Fernando Perez (estudiante español de ingeniería aeronáutica)
-\item Es un entorno completo de computación interactiva en entorno web
+\item Creado por Fernando Perez (estudiante de ingeniería aeronáutica)
+\item Entorno completo de computación interactiva en el browser
 \item HTML o Markdown + Python o Julia
-\item Permite hacer binding hacia otros lenguajes de programación tales como: R, ruby, shell, entre otros.
-\item Puede exportar los documentos resultantes hacia: PDF, HTML, Latex o reveal.js 
-\item Incluye soporte Unicode, revisión ortográfica, plegado de código y un visor de pdf y modo de visualización continua.
+\item Permite binding hacia otros lenguajes como: R, ruby, shell, ...
+\item Exporta los documentos resultantes hacia: PDF, HTML, Latex o reveal.js 
+\item \textbf{nbviewer} [\url{http://nbviewer.ipython.org/}] el servicio de publicación gratuito de notebooks en la Web 
 \end{itemize}
 \end{columns}
 \end{block}
 \end{frame}
 
 \begin{frame}
-\frametitle {Entronos y herramientas popularizados}
+\frametitle {Entornos y herramientas modernas}
 \justifying
 \begin{block}{knitr + RStudio}
 \begin{columns}
@@ -337,17 +328,57 @@ Descendiente del entorno WEB usa en cambio C como lenguaje de programación pero
 \column{.8\textwidth}
 \begin{itemize}
 \justifying
-\item \textbf{knitr} desarrollado por Yihui Xie mientras realizaba su trabajo de graduación
-\item Es una librería escrita en R
-\item HTML(o LateX o Markdown) + R 
-\item Sus caracteristicas están orientadas a mitigar las limitaciones de SWEAVE.
+\item \textbf{knitr} desarrollado por Yihui Xie al realizar su trabajo de graduación
+\item Es una librería escrita en R y para R
+\item HTML(o \LaTeX o Markdown) + R 
+\item Orientado a mitigar las limitaciones de SWEAVE.
 \item Puede exportar a PDF, HTML o Word
-\item \textbf{knitr} es integrable con el IDE \textbf{Rstudio}
+\item \textbf{knitr} es integrable con el IDE \textbf{RStudio}
+\item \textbf{Rpubs} [\url{http://rpubs.com}] su servicio de publicación gratuito de RStudio en la Web
 \end{itemize}
 \end{columns}
 \end{block}
 \end{frame}
 
+\begin{frame}
+\frametitle {Entornos y herramientas modernas}
+\justifying
+\begin{block}{git}
+\begin{columns}
+\column{.1\textwidth} \hspace{0.7cm}
+\includegraphics[width=2.3cm]{imagenes/git.png} 
+\column{.8\textwidth}
+\begin{itemize}
+\justifying
+\item \textbf Desarrollado por Linus Torvalds en el 2005 
+\item Herramienta de control de versiones distribuida
+\item Rápido y pequeño
+\item Abundantes comandos que permiten el trabajo colaborativo 
+\item Cuarda el rastro de los cambios muy detalladamente
+\item Git LFS: extensión para manegar archivos de gran tamaño 
+\end{itemize}
+\end{columns}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle {Entornos y herramientas modernas}
+\justifying
+\begin{block}{github}
+\begin{columns}
+\column{.1\textwidth} \hspace{0.7cm}
+\includegraphics[width=2.3cm]{imagenes/github.png} 
+\column{.8\textwidth}
+\begin{itemize}
+\justifying
+\item Originalmente conocida como Logical Awsome
+\item Plataforma de desarrollo de software colaborativo, pero, con millares de repositorios que contienen codigo y datos de experimentos reproducibles
+\item El código se alamacena de forma pública con la posibilidad de hacerlo privado
+\item Github alcanzó \textbf{1 millón} de repositorios en el \textbf{2010}, \textbf{2 millones} en el \textbf{2011}, \textbf{10 millones} en el \textbf{2013} y llegando a \textbf{21 millones} de repositorios en Abril del \textbf{2015} y \textbf{9 millones de usuarios}
+\end{itemize}
+\end{columns}
+\end{block}
+\end{frame}
 
 \section{Demos}
 \begin{frame}
@@ -357,208 +388,33 @@ Descendiente del entorno WEB usa en cambio C como lenguaje de programación pero
 
 %++++++++++++++++++++++++++
 
-\begin{frame}
-\frametitle {Editores \LaTeX \hspace{0.1cm}  con Interfaz Gráfica}
-\begin{block}{LyX}
-\begin{columns}
-\column{.1\textwidth} \hspace{0.7cm}
-\includegraphics[width=1.8cm]{imagenes/lyx.PNG} 
-\column{.8\textwidth}
-\begin{itemize}
-\justifying
-\item Version 2.0.3  marzo del 2012
-\item Principal característica es la interfaz gráfica.
-\item Enfoque basado en la estructura del documento y no simplemente en su aspecto.
-\item Tiene un editor de ecuaciones totalmente integrado para la creación de contenido matemático
-\item LyX se publica bajo una licencia Free Software / Open Source, funciona en Linux/Unix, Windows y Mac OS X, y está disponible en varios idiomas.
-\item \textbf{Enlace de Descarga:}\textcolor{blue}{\url{http://www.lyx.org/WebEs.Download}}
-\end{itemize}
-\end{columns}
-\end{block}
-
-\end{frame}
-
-\section{\LaTeX en la web}
-\begin{frame}
-\frametitle {\LaTeX \hspace{0.1cm}  en la web}
-\begin{block}{ScripTeX}
-%\begin{columns}
-%\column{.1\textwidth} \hspace{0.6cm}
-\hfill \includegraphics[width=1.4cm]{imagenes/scribtex.jpg} 
-%\column{.8\textwidth}
-\begin{itemize}
-\justifying
-\item Funcionalidades: almacenar en nuestra cuenta los documentos creados de forma permanente o compartirlos con otros usuarios para trabajar en equipo.
-\item Compatible con dispositivos móviles como el iPhone y iPad
-\item Opción de trabajo en línea ideal cuando el software habitual falla
-\item \textbf{Enlace}\textcolor{blue}{\url{https://www.scribtex.com/}}
-\end{itemize}
-%\end{columns}
-\end{block}
-\end{frame}
-
-\begin{frame}
-\frametitle {\LaTeX \hspace{0.2cm} en la web}
-
-\begin{block}{Editor Online de Ecuaciones \LaTeX}
-\justifying
-Este programa permite practicar lo básico del código LaTeX, muestra en tiempo real el aspecto gráfico que tomarán las expresiones algebraicas
-Editor de ecuaciones que genera ecuaciones gráficas (gif, png, swf, pdf, emf).\\
-\textbf{Enlace: }\textcolor{blue}{\url{http://rinconmatematico.com/latexrender/}}
-\end{block}
-
-\end{frame}
-
-\section{Plug-in para tablas desde Calc}
-\begin{frame}
-\frametitle {Plug-in para tablas desde Calc}
-\justifying
-LaTeX puede reutilizar los datos existentes en tablas creadas con las hojas de cálculo de OpenOffice, mediante la macro \textcolor{brown}{\textbf{ Calc2latex}}\\
-
-\textbf{Enlace de Descarga: }\textcolor{blue}{\url{http://calc2latex.sourceforge.net/}}
-\end{frame}
-
-\section{Creación de Documentos en \LaTeX}
-\begin{frame}
-\frametitle {Creación de Documentos en \LaTeX}
-\begin{center}
-\begin{columns}
-\column{.2\textwidth} \hspace{1 cm}
-
-\textbf{Tipos de Documentos:}
-\begin{enumerate}
-\item beamer
-\item articulo
-\item report
-\item letter
-\item book
-\end{enumerate}
-\column{.8\textwidth}
-\includegraphics[height=4cm]{imagenes/estDoc.PNG}  
-\end{columns}
-\end{center}
-
-\end{frame}
-
-\begin{frame}
-\frametitle {Creación de Documentos en \LaTeX : Plantillas}
-\begin{enumerate}
-\item Artículos Científicos
-\item Presentaciones
-\item Póster
-\item Libros
-\item Proyectos de Fin de Carrera 
-\item Memorias Técnicas
-\item Tesis Doctoral
-\end{enumerate}
-\end{frame}
-
-\section{\LaTeX  en dispositivos portables}
-\subsection{VerbTeX LaTex Editor}
-\begin{frame}
-\frametitle{\LaTeX desde dispositivos móviles}
-\begin{block}{VerbTeX LaTex Editor}
-\justifying
-Es un editor gratuito \LaTeX de colaboración para su dispositivo Android. Te permite crear y gestionar proyectos de \LaTeX directamente en su dispositivo Android y generar un archivo PDF utilizando el servicio de \LaTeX disponible en \textcolor{blue}{\url{http://www.verbosus.com}}  
-\end{block}
-\begin{center}
-\begin{columns}
-\column{.2\textwidth} \hspace{0.7cm}
-\includegraphics[width=2.5 cm]{imagenes/verbtex.jpg} 
-\column{.10\textwidth}
-\includegraphics[width=2.5 cm]{imagenes/movilVerbtex.jpg} 
-\end{columns}
-\end{center}
-
-
-
-
-\end{frame}
-
-\begin{frame}
-\frametitle{\LaTeX desde dispositivos móviles}
-
-
-\begin{block}{ VerbTeX LaTeX Editor: Enlaces de Descarga}
-\begin{itemize}
-\justifying
-\item \textit{Desde el ordenador:}  \textcolor{blue}{\url{http://www.verbosus.com/VerbTeX_v2.1.9.apk}}
-\item \textit{Desde el Movil:} 
-\begin{itemize}
-\justifying
-\item Versión Gratuita:\textcolor{brown}{\textbf{VerbTeX LaTeX Editor}}\hfill \textcolor{blue}{\url{Link https://play.google.com/store/apps/details?id=verbosus.verbtex&feature=search_result }}
-\item Versión de Pago:\textcolor{brown}{\textbf{VerbTeX Pro LaTeX (Encryption) 1.49 euro }}  \hfill \textcolor{blue}{\url{https://play.google.com/store/apps/details?id=verbosus.verbtexpro&feature=search_result }}
-\end{itemize}
-\end{itemize}
-\end{block}
-
-\end{frame}
-
-\begin{frame}
-\frametitle {Versiones de VerbTeX LaTex Editor}
-\begin{center}
-\includegraphics[height=4cm]{imagenes/vMobil.png} 
-\end{center}
-\justifying
-\textbf{Detexify Latex Recognizer}\\
-\textit{Enlace al Google Play:}\textcolor{blue}{\url{https://play.google.com/store/apps/details?id=coolcherrytrees.software.detexify&feature=search_result }}
-\end{frame}
-
-\subsection{Utilización de USBTeX}
-\begin{frame}
-\frametitle {Utilización de USBTeX}
-\begin{center}
-\includegraphics[height=1.5 cm]{imagenes/usbtex.png} 
-\end{center}
-\begin{block}{Ventajas de USBTEX}
-\begin{itemize}
-\justifying
-\item Es portable(ejecutable en cualquier ordenador Windows)
-\item Útil para personas que viajan constantemente
-\item Viene empaquetado todas las aplicaciones(Gostscript, Ghostview, un editor y su configuración) necesarios para ejecutar 
-\end{itemize}
-\end{block}
-
-\begin{block}{Inconvenientes de USBTEX}
-\begin{itemize}
-\justifying
-\item No compila archivos Beamers
-\item Solo acepta (*.eps) para imágenes y figuras
-\end{itemize}
-\end{block}
-\end{frame}
-
-\section{Enlaces de Ayuda}
-\begin{frame}
-\frametitle {Enlaces de Ayuda}
-\begin{thebibliography}{10}
-\bibitem{  } Alex Borbón A., Walter Mora F.
-\newblock{ \LaTeX Composición, Diseño Editorial, Gráficos,
-Inkscape, Tikz y Presentaciones Beame} 2012
-\newblock 
-\url{http://www.tec-digital.itcr.ac.cr/revistamatematica/Libros/LATEX/LaTeX_2011.pdf}
-
-\end{thebibliography}
-\end{frame}
+%\section{Enlaces de Ayuda}
+%\begin{frame}
+%\frametitle {Enlaces de Ayuda}
+%\begin{thebibliography}{10}
+%\bibitem{  } Alex Borbón A., Walter Mora F.
+%\newblock{ \LaTeX Composición, Diseño Editorial, Gráficos,
+%Inkscape, Tikz y Presentaciones Beame} 2012
+%\newblock 
+%\url{http://www.tec-digital.itcr.ac.cr/revistamatematica/Libros/LATEX/LaTeX_2011.pdf}
+%\end{thebibliography}
+%\end{frame}
 
 \begin{frame}
 \frametitle {Créditos}
-	\begin{center}
-		\textbf{\textit{Expositores}}\\
-			Ing. Luis Antonio Chamba Eras\\
-			José Fernando Castillo Alba\\
-			Gabriela María Narváez Chamba\\
-			Jessica Andrea Ponce Calderón\\
-			Luis Antonio Soto  Gonzalez\\
-\vspace{0.5 cm}
-\textbf{\textit{Escritura Científica en \LaTeX }}\\
-Grupo de Apoyo para la Escritura Científica\\
-  Décimo Módulo\\
-  \vspace{0.3 cm}
-\includegraphics[height=0.5 cm]{imagenes/escudoUNL.png} \\
-\textbf{Universidad Nacional de Loja\\
-Carrera de Ingeniería en Sistemas\\
-2012
+\begin{center}
+\textbf{\textit{Expositor}}\\
+Ing. Milton Leonardo Labanda Jaramillo, Mg.\\
+\vspace{0.25 cm}
+\textbf{@miltonlab}\\
+\vspace{0.15 cm}
+\includegraphics[scale=0.25]{imagenes/twitter47.png} \hspace{0.5 cm}
+\includegraphics[scale=0.25]{imagenes/linkedin12.png} \hspace{0.5 cm} \includegraphics[scale=0.25]{imagenes/github17.png}\\
+\vspace{1 cm}
+\includegraphics{imagenes/uide.png} \\
+\textbf{Universidad Internacional del Ecuador sede Loja\\
+Escuela de Informática y Multimedia\\
+2015
 }
 	\end{center}
 \end{frame}
